@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%- title %></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container position-relative">
+        <a class="mx-auto ms-md-0 mt-5 mb-35" href="#"
+          ><img src="./assets/images/logo.png" alt=""
+        /></a>
+        <div
+          class="menu position-md-absolute bottom-0 end-0 d-flex justify-content-evenly rounded-3 rounded-md-0 shadow-sm shadow-md-none w-100 py-2"
+          id="navbarSupportedContent"
+        >
+          <ul class="nav align-items-center ms-md-auto mb-0">
+            <li class="nav-item">
+              <a
+                class="nav-link text-primary active"
+                aria-current="page"
+                href="#"
+                ><img
+                  src="./assets/images/pinkDot.png"
+                  alt=""
+                  class="d-none d-md-inline me-2"
+                /><span class="align-bottom">台灣景點</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-third" href="#"
+                ><img
+                  src="./assets/images/yellowDot.png"
+                  alt=""
+                  class="d-none d-md-inline me-2"
+                /><span class="align-bottom">美食住宿</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#"
+                ><img
+                  src="./assets/images/greenDot.png"
+                  alt=""
+                  class="d-none d-md-inline me-2"
+                /><span class="align-bottom">景點交通</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="border border-white border-16">
+      <div
+        class="container vstack justify-content-center align-items-center text-white h-100"
+      >
+        <div class="wrap">
+          <div class="d-flex">
+            <span class="display-5 fw-bold">Welcome to</span>
+            <h2 class="d-inline display-5 text-primary fw-bold">Taiwan</h2>
+          </div>
+          <small class="">台北、台中、台南、屏東、宜蘭……遊遍台灣</small>
+          <div class="hstack mb-3 mt-3">
+            <input
+              type="text"
+              class="form-control border-0 p-2"
+              id="exampleFormControlInput1"
+              placeholder="搜尋關鍵字"
+            /><img src="./assets/images/search.png" alt="" class="ms-2" />
+          </div>
+          <div class="hstack mb-3 mt-3">
+            <select
+              class="form-select border-0 p-2 me-2"
+              aria-label="Default select example"
+            >
+              <option selected>類別</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <select
+              class="form-select border-0 p-2"
+              aria-label="Default select example"
+            >
+              <option selected>不分縣市</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option> </select
+            ><img src="./assets/images/location.png" alt="" class="ms-2" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <%- contents %>
+
+    <footer class="footer">
+      footer
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
